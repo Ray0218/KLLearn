@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B0098F5EEBD71AADC49D61A /* Pods_KLTimer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A33C2D153A0025D30A9027E /* Pods_KLTimer.framework */; };
+		F79F74D1237AD2E900DC5B84 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F79F74D0237AD2E900DC5B84 /* AppDelegate.m */; };
+		F79F74D7237AD2E900DC5B84 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F79F74D6237AD2E900DC5B84 /* ViewController.m */; };
+		F79F74DA237AD2E900DC5B84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F79F74D8237AD2E900DC5B84 /* Main.storyboard */; };
+		F79F74DC237AD30600DC5B84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F79F74DB237AD30600DC5B84 /* Assets.xcassets */; };
+		F79F74DF237AD30600DC5B84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F79F74DD237AD30600DC5B84 /* LaunchScreen.storyboard */; };
+		F79F74E2237AD30600DC5B84 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F79F74E1237AD30600DC5B84 /* main.m */; };
+		F79F74EC237AD30600DC5B84 /* KLTimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F79F74EB237AD30600DC5B84 /* KLTimerTests.m */; };
+		F79F74F8237ADEEE00DC5B84 /* KLSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = F79F74F7237ADEEE00DC5B84 /* KLSignal.m */; };
+		F79F74FB237AE5EC00DC5B84 /* TimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F79F74FA237AE5EC00DC5B84 /* TimeViewController.m */; };
+		F79F74FE237AEF7800DC5B84 /* NSTimer+Extern.m in Sources */ = {isa = PBXBuildFile; fileRef = F79F74FD237AEF7800DC5B84 /* NSTimer+Extern.m */; };
+		F7A9FE2C24ED3EE0009B3DC8 /* KLTestRuntimer.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A9FE2B24ED3EE0009B3DC8 /* KLTestRuntimer.m */; };
+		F7D683E3237BD5C800EB4062 /* KLFloatView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D683E2237BD5C800EB4062 /* KLFloatView.m */; };
+		F7D683E6237BE56F00EB4062 /* KLAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D683E5237BE56F00EB4062 /* KLAnimator.m */; };
+		F7D683ED237C2E8400EB4062 /* AFHTTPSessionManager+Swizzer.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D683EC237C2E8400EB4062 /* AFHTTPSessionManager+Swizzer.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F79F74E8237AD30600DC5B84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F79F74C4237AD2E800DC5B84 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F79F74CB237AD2E900DC5B84;
+			remoteInfo = KLTimer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		168601A7CCE1A710E431ADF7 /* Pods-KLTimer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KLTimer.release.xcconfig"; path = "Target Support Files/Pods-KLTimer/Pods-KLTimer.release.xcconfig"; sourceTree = "<group>"; };
+		3A33C2D153A0025D30A9027E /* Pods_KLTimer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KLTimer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF9A19347F5EB4C11A2AF5A8 /* Pods-KLTimer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KLTimer.debug.xcconfig"; path = "Target Support Files/Pods-KLTimer/Pods-KLTimer.debug.xcconfig"; sourceTree = "<group>"; };
+		F79F74CC237AD2E900DC5B84 /* KLTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KLTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F79F74CF237AD2E900DC5B84 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F79F74D0237AD2E900DC5B84 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F79F74D5237AD2E900DC5B84 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F79F74D6237AD2E900DC5B84 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F79F74D9237AD2E900DC5B84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F79F74DB237AD30600DC5B84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F79F74DE237AD30600DC5B84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F79F74E0237AD30600DC5B84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F79F74E1237AD30600DC5B84 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F79F74E7237AD30600DC5B84 /* KLTimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KLTimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F79F74EB237AD30600DC5B84 /* KLTimerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KLTimerTests.m; sourceTree = "<group>"; };
+		F79F74ED237AD30600DC5B84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F79F74F6237ADEEE00DC5B84 /* KLSignal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KLSignal.h; sourceTree = "<group>"; };
+		F79F74F7237ADEEE00DC5B84 /* KLSignal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KLSignal.m; sourceTree = "<group>"; };
+		F79F74F9237AE5EC00DC5B84 /* TimeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimeViewController.h; sourceTree = "<group>"; };
+		F79F74FA237AE5EC00DC5B84 /* TimeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimeViewController.m; sourceTree = "<group>"; };
+		F79F74FC237AEF7800DC5B84 /* NSTimer+Extern.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Extern.h"; sourceTree = "<group>"; };
+		F79F74FD237AEF7800DC5B84 /* NSTimer+Extern.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Extern.m"; sourceTree = "<group>"; };
+		F7A9FE2A24ED3EE0009B3DC8 /* KLTestRuntimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KLTestRuntimer.h; sourceTree = "<group>"; };
+		F7A9FE2B24ED3EE0009B3DC8 /* KLTestRuntimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KLTestRuntimer.m; sourceTree = "<group>"; };
+		F7D683E1237BD5C800EB4062 /* KLFloatView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KLFloatView.h; sourceTree = "<group>"; };
+		F7D683E2237BD5C800EB4062 /* KLFloatView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KLFloatView.m; sourceTree = "<group>"; };
+		F7D683E4237BE56F00EB4062 /* KLAnimator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KLAnimator.h; sourceTree = "<group>"; };
+		F7D683E5237BE56F00EB4062 /* KLAnimator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KLAnimator.m; sourceTree = "<group>"; };
+		F7D683EB237C2E8400EB4062 /* AFHTTPSessionManager+Swizzer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AFHTTPSessionManager+Swizzer.h"; sourceTree = "<group>"; };
+		F7D683EC237C2E8400EB4062 /* AFHTTPSessionManager+Swizzer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPSessionManager+Swizzer.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F79F74C9237AD2E900DC5B84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B0098F5EEBD71AADC49D61A /* Pods_KLTimer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F79F74E4237AD30600DC5B84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		76637873EDECCC45D6A529C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A33C2D153A0025D30A9027E /* Pods_KLTimer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		784F407B81697490E482D21F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DF9A19347F5EB4C11A2AF5A8 /* Pods-KLTimer.debug.xcconfig */,
+				168601A7CCE1A710E431ADF7 /* Pods-KLTimer.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F79F74C3237AD2E800DC5B84 = {
+			isa = PBXGroup;
+			children = (
+				F79F74CE237AD2E900DC5B84 /* KLTimer */,
+				F79F74EA237AD30600DC5B84 /* KLTimerTests */,
+				F79F74CD237AD2E900DC5B84 /* Products */,
+				784F407B81697490E482D21F /* Pods */,
+				76637873EDECCC45D6A529C9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F79F74CD237AD2E900DC5B84 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F79F74CC237AD2E900DC5B84 /* KLTimer.app */,
+				F79F74E7237AD30600DC5B84 /* KLTimerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F79F74CE237AD2E900DC5B84 /* KLTimer */ = {
+			isa = PBXGroup;
+			children = (
+				F7D683EA237C2D8A00EB4062 /* NetWork */,
+				F79F74CF237AD2E900DC5B84 /* AppDelegate.h */,
+				F79F74D0237AD2E900DC5B84 /* AppDelegate.m */,
+				F79F74D5237AD2E900DC5B84 /* ViewController.h */,
+				F79F74D6237AD2E900DC5B84 /* ViewController.m */,
+				F79F74F6237ADEEE00DC5B84 /* KLSignal.h */,
+				F79F74F7237ADEEE00DC5B84 /* KLSignal.m */,
+				F7A9FE2A24ED3EE0009B3DC8 /* KLTestRuntimer.h */,
+				F7A9FE2B24ED3EE0009B3DC8 /* KLTestRuntimer.m */,
+				F79F74F9237AE5EC00DC5B84 /* TimeViewController.h */,
+				F79F74FA237AE5EC00DC5B84 /* TimeViewController.m */,
+				F79F74FC237AEF7800DC5B84 /* NSTimer+Extern.h */,
+				F79F74FD237AEF7800DC5B84 /* NSTimer+Extern.m */,
+				F7D683E1237BD5C800EB4062 /* KLFloatView.h */,
+				F7D683E2237BD5C800EB4062 /* KLFloatView.m */,
+				F7D683E4237BE56F00EB4062 /* KLAnimator.h */,
+				F7D683E5237BE56F00EB4062 /* KLAnimator.m */,
+				F79F74D8237AD2E900DC5B84 /* Main.storyboard */,
+				F79F74DB237AD30600DC5B84 /* Assets.xcassets */,
+				F79F74DD237AD30600DC5B84 /* LaunchScreen.storyboard */,
+				F79F74E0237AD30600DC5B84 /* Info.plist */,
+				F79F74E1237AD30600DC5B84 /* main.m */,
+			);
+			path = KLTimer;
+			sourceTree = "<group>";
+		};
+		F79F74EA237AD30600DC5B84 /* KLTimerTests */ = {
+			isa = PBXGroup;
+			children = (
+				F79F74EB237AD30600DC5B84 /* KLTimerTests.m */,
+				F79F74ED237AD30600DC5B84 /* Info.plist */,
+			);
+			path = KLTimerTests;
+			sourceTree = "<group>";
+		};
+		F7D683EA237C2D8A00EB4062 /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				F7D683EB237C2E8400EB4062 /* AFHTTPSessionManager+Swizzer.h */,
+				F7D683EC237C2E8400EB4062 /* AFHTTPSessionManager+Swizzer.m */,
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F79F74CB237AD2E900DC5B84 /* KLTimer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F79F74F0237AD30600DC5B84 /* Build configuration list for PBXNativeTarget "KLTimer" */;
+			buildPhases = (
+				DA3C5A53C1FF315E24578679 /* [CP] Check Pods Manifest.lock */,
+				F79F74C8237AD2E900DC5B84 /* Sources */,
+				F79F74C9237AD2E900DC5B84 /* Frameworks */,
+				F79F74CA237AD2E900DC5B84 /* Resources */,
+				A7D72BA2617FD7E7CEBE26D5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KLTimer;
+			productName = KLTimer;
+			productReference = F79F74CC237AD2E900DC5B84 /* KLTimer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F79F74E6237AD30600DC5B84 /* KLTimerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F79F74F3237AD30600DC5B84 /* Build configuration list for PBXNativeTarget "KLTimerTests" */;
+			buildPhases = (
+				F79F74E3237AD30600DC5B84 /* Sources */,
+				F79F74E4237AD30600DC5B84 /* Frameworks */,
+				F79F74E5237AD30600DC5B84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F79F74E9237AD30600DC5B84 /* PBXTargetDependency */,
+			);
+			name = KLTimerTests;
+			productName = KLTimerTests;
+			productReference = F79F74E7237AD30600DC5B84 /* KLTimerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F79F74C4237AD2E800DC5B84 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = Ray;
+				TargetAttributes = {
+					F79F74CB237AD2E900DC5B84 = {
+						CreatedOnToolsVersion = 11.2;
+					};
+					F79F74E6237AD30600DC5B84 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = F79F74CB237AD2E900DC5B84;
+					};
+				};
+			};
+			buildConfigurationList = F79F74C7237AD2E800DC5B84 /* Build configuration list for PBXProject "KLTimer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F79F74C3237AD2E800DC5B84;
+			productRefGroup = F79F74CD237AD2E900DC5B84 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F79F74CB237AD2E900DC5B84 /* KLTimer */,
+				F79F74E6237AD30600DC5B84 /* KLTimerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F79F74CA237AD2E900DC5B84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F79F74DF237AD30600DC5B84 /* LaunchScreen.storyboard in Resources */,
+				F79F74DC237AD30600DC5B84 /* Assets.xcassets in Resources */,
+				F79F74DA237AD2E900DC5B84 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F79F74E5237AD30600DC5B84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A7D72BA2617FD7E7CEBE26D5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KLTimer/Pods-KLTimer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KLTimer/Pods-KLTimer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KLTimer/Pods-KLTimer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA3C5A53C1FF315E24578679 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KLTimer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F79F74C8237AD2E900DC5B84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7D683E3237BD5C800EB4062 /* KLFloatView.m in Sources */,
+				F79F74F8237ADEEE00DC5B84 /* KLSignal.m in Sources */,
+				F7A9FE2C24ED3EE0009B3DC8 /* KLTestRuntimer.m in Sources */,
+				F79F74D7237AD2E900DC5B84 /* ViewController.m in Sources */,
+				F7D683E6237BE56F00EB4062 /* KLAnimator.m in Sources */,
+				F7D683ED237C2E8400EB4062 /* AFHTTPSessionManager+Swizzer.m in Sources */,
+				F79F74D1237AD2E900DC5B84 /* AppDelegate.m in Sources */,
+				F79F74E2237AD30600DC5B84 /* main.m in Sources */,
+				F79F74FB237AE5EC00DC5B84 /* TimeViewController.m in Sources */,
+				F79F74FE237AEF7800DC5B84 /* NSTimer+Extern.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F79F74E3237AD30600DC5B84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F79F74EC237AD30600DC5B84 /* KLTimerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F79F74E9237AD30600DC5B84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F79F74CB237AD2E900DC5B84 /* KLTimer */;
+			targetProxy = F79F74E8237AD30600DC5B84 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F79F74D8237AD2E900DC5B84 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F79F74D9237AD2E900DC5B84 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F79F74DD237AD30600DC5B84 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F79F74DE237AD30600DC5B84 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F79F74EE237AD30600DC5B84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F79F74EF237AD30600DC5B84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F79F74F1237AD30600DC5B84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF9A19347F5EB4C11A2AF5A8 /* Pods-KLTimer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 78AKS5G7F3;
+				INFOPLIST_FILE = KLTimer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ray-ios.KLTimer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F79F74F2237AD30600DC5B84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 168601A7CCE1A710E431ADF7 /* Pods-KLTimer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 78AKS5G7F3;
+				INFOPLIST_FILE = KLTimer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ray-ios.KLTimer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F79F74F4237AD30600DC5B84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KLTimerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ray-ios.KLTimerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KLTimer.app/KLTimer";
+			};
+			name = Debug;
+		};
+		F79F74F5237AD30600DC5B84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KLTimerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ray-ios.KLTimerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KLTimer.app/KLTimer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F79F74C7237AD2E800DC5B84 /* Build configuration list for PBXProject "KLTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F79F74EE237AD30600DC5B84 /* Debug */,
+				F79F74EF237AD30600DC5B84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F79F74F0237AD30600DC5B84 /* Build configuration list for PBXNativeTarget "KLTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F79F74F1237AD30600DC5B84 /* Debug */,
+				F79F74F2237AD30600DC5B84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F79F74F3237AD30600DC5B84 /* Build configuration list for PBXNativeTarget "KLTimerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F79F74F4237AD30600DC5B84 /* Debug */,
+				F79F74F5237AD30600DC5B84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F79F74C4237AD2E800DC5B84 /* Project object */;
+}
