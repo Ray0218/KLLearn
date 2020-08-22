@@ -12,7 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface KLTestRuntimer : NSObject
 
+@property(nonatomic,strong)NSString *name;
 
+-(void)pvt_print;
 -(void)pvt_test;
 
 +(void)pvt_classtest;
@@ -21,6 +23,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 @interface KLOtherPerson : NSObject
+
+
+@property(nonatomic,strong)NSString *rName;
+
+@property(nonatomic,assign)NSInteger rAge;
+
+@property(nonatomic,assign)NSInteger rHeight;
+
 
 -(void)pvt_test;
 +(void)pvt_classtest;

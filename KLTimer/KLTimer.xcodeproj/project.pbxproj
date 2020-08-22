@@ -18,10 +18,15 @@
 		F79F74F8237ADEEE00DC5B84 /* KLSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = F79F74F7237ADEEE00DC5B84 /* KLSignal.m */; };
 		F79F74FB237AE5EC00DC5B84 /* TimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F79F74FA237AE5EC00DC5B84 /* TimeViewController.m */; };
 		F79F74FE237AEF7800DC5B84 /* NSTimer+Extern.m in Sources */ = {isa = PBXBuildFile; fileRef = F79F74FD237AEF7800DC5B84 /* NSTimer+Extern.m */; };
+		F7A6DA2524EFCE6800E5B6AB /* KLRunLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A6DA2424EFCE6800E5B6AB /* KLRunLoopViewController.m */; };
+		F7A6DA2B24F0B89800E5B6AB /* KLPermenThread.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A6DA2A24F0B89800E5B6AB /* KLPermenThread.m */; };
 		F7A9FE2C24ED3EE0009B3DC8 /* KLTestRuntimer.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A9FE2B24ED3EE0009B3DC8 /* KLTestRuntimer.m */; };
 		F7D683E3237BD5C800EB4062 /* KLFloatView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D683E2237BD5C800EB4062 /* KLFloatView.m */; };
 		F7D683E6237BE56F00EB4062 /* KLAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D683E5237BE56F00EB4062 /* KLAnimator.m */; };
 		F7D683ED237C2E8400EB4062 /* AFHTTPSessionManager+Swizzer.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D683EC237C2E8400EB4062 /* AFHTTPSessionManager+Swizzer.m */; };
+		F7E8490D24EE9B7900F6F153 /* NSObject+json.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E8490C24EE9B7900F6F153 /* NSObject+json.m */; };
+		F7E8491024EEA2F800F6F153 /* UIControl+Action.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E8490F24EEA2F800F6F153 /* UIControl+Action.m */; };
+		F7E8491324EEA72800F6F153 /* NSMutableArray+SafeAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E8491224EEA72800F6F153 /* NSMutableArray+SafeAdd.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +62,11 @@
 		F79F74FA237AE5EC00DC5B84 /* TimeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimeViewController.m; sourceTree = "<group>"; };
 		F79F74FC237AEF7800DC5B84 /* NSTimer+Extern.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Extern.h"; sourceTree = "<group>"; };
 		F79F74FD237AEF7800DC5B84 /* NSTimer+Extern.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Extern.m"; sourceTree = "<group>"; };
+		F7A6DA2324EFCE6800E5B6AB /* KLRunLoopViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KLRunLoopViewController.h; sourceTree = "<group>"; };
+		F7A6DA2424EFCE6800E5B6AB /* KLRunLoopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KLRunLoopViewController.m; sourceTree = "<group>"; };
+		F7A6DA2924F0B89800E5B6AB /* KLPermenThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KLPermenThread.h; sourceTree = "<group>"; };
+		F7A6DA2A24F0B89800E5B6AB /* KLPermenThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KLPermenThread.m; sourceTree = "<group>"; };
+		F7A6DA2C24F0ED0700E5B6AB /* KLpermenThread.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = KLpermenThread.cpp; sourceTree = "<group>"; };
 		F7A9FE2A24ED3EE0009B3DC8 /* KLTestRuntimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KLTestRuntimer.h; sourceTree = "<group>"; };
 		F7A9FE2B24ED3EE0009B3DC8 /* KLTestRuntimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KLTestRuntimer.m; sourceTree = "<group>"; };
 		F7D683E1237BD5C800EB4062 /* KLFloatView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KLFloatView.h; sourceTree = "<group>"; };
@@ -65,6 +75,12 @@
 		F7D683E5237BE56F00EB4062 /* KLAnimator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KLAnimator.m; sourceTree = "<group>"; };
 		F7D683EB237C2E8400EB4062 /* AFHTTPSessionManager+Swizzer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AFHTTPSessionManager+Swizzer.h"; sourceTree = "<group>"; };
 		F7D683EC237C2E8400EB4062 /* AFHTTPSessionManager+Swizzer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPSessionManager+Swizzer.m"; sourceTree = "<group>"; };
+		F7E8490B24EE9B7900F6F153 /* NSObject+json.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+json.h"; sourceTree = "<group>"; };
+		F7E8490C24EE9B7900F6F153 /* NSObject+json.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+json.m"; sourceTree = "<group>"; };
+		F7E8490E24EEA2F800F6F153 /* UIControl+Action.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIControl+Action.h"; sourceTree = "<group>"; };
+		F7E8490F24EEA2F800F6F153 /* UIControl+Action.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIControl+Action.m"; sourceTree = "<group>"; };
+		F7E8491124EEA72800F6F153 /* NSMutableArray+SafeAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+SafeAdd.h"; sourceTree = "<group>"; };
+		F7E8491224EEA72800F6F153 /* NSMutableArray+SafeAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+SafeAdd.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,8 +147,19 @@
 				F79F74D0237AD2E900DC5B84 /* AppDelegate.m */,
 				F79F74D5237AD2E900DC5B84 /* ViewController.h */,
 				F79F74D6237AD2E900DC5B84 /* ViewController.m */,
+				F7A6DA2324EFCE6800E5B6AB /* KLRunLoopViewController.h */,
+				F7A6DA2424EFCE6800E5B6AB /* KLRunLoopViewController.m */,
+				F7A6DA2924F0B89800E5B6AB /* KLPermenThread.h */,
+				F7A6DA2A24F0B89800E5B6AB /* KLPermenThread.m */,
+				F7A6DA2C24F0ED0700E5B6AB /* KLpermenThread.cpp */,
 				F79F74F6237ADEEE00DC5B84 /* KLSignal.h */,
 				F79F74F7237ADEEE00DC5B84 /* KLSignal.m */,
+				F7E8491124EEA72800F6F153 /* NSMutableArray+SafeAdd.h */,
+				F7E8491224EEA72800F6F153 /* NSMutableArray+SafeAdd.m */,
+				F7E8490E24EEA2F800F6F153 /* UIControl+Action.h */,
+				F7E8490F24EEA2F800F6F153 /* UIControl+Action.m */,
+				F7E8490B24EE9B7900F6F153 /* NSObject+json.h */,
+				F7E8490C24EE9B7900F6F153 /* NSObject+json.m */,
 				F7A9FE2A24ED3EE0009B3DC8 /* KLTestRuntimer.h */,
 				F7A9FE2B24ED3EE0009B3DC8 /* KLTestRuntimer.m */,
 				F79F74F9237AE5EC00DC5B84 /* TimeViewController.h */,
@@ -315,12 +342,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7D683E3237BD5C800EB4062 /* KLFloatView.m in Sources */,
+				F7E8491024EEA2F800F6F153 /* UIControl+Action.m in Sources */,
 				F79F74F8237ADEEE00DC5B84 /* KLSignal.m in Sources */,
 				F7A9FE2C24ED3EE0009B3DC8 /* KLTestRuntimer.m in Sources */,
 				F79F74D7237AD2E900DC5B84 /* ViewController.m in Sources */,
+				F7E8491324EEA72800F6F153 /* NSMutableArray+SafeAdd.m in Sources */,
+				F7A6DA2B24F0B89800E5B6AB /* KLPermenThread.m in Sources */,
 				F7D683E6237BE56F00EB4062 /* KLAnimator.m in Sources */,
 				F7D683ED237C2E8400EB4062 /* AFHTTPSessionManager+Swizzer.m in Sources */,
+				F7A6DA2524EFCE6800E5B6AB /* KLRunLoopViewController.m in Sources */,
 				F79F74D1237AD2E900DC5B84 /* AppDelegate.m in Sources */,
+				F7E8490D24EE9B7900F6F153 /* NSObject+json.m in Sources */,
 				F79F74E2237AD30600DC5B84 /* main.m in Sources */,
 				F79F74FB237AE5EC00DC5B84 /* TimeViewController.m in Sources */,
 				F79F74FE237AEF7800DC5B84 /* NSTimer+Extern.m in Sources */,

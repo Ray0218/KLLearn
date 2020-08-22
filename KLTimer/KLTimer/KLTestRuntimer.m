@@ -17,8 +17,72 @@
 -(void)test_other{
     
     NSLog(@"%s",__func__) ;
+    
+    
 }
 
+
+void run(id self, SEL _cmd){
+    NSLog(@" %@ --- %@",self,NSStringFromSelector(_cmd)) ;
+}
+
+-(void)pvt_print{
+    NSLog(@"my name == %@",self.name) ;
+    
+    KLOtherPerson *person = [KLOtherPerson new] ;
+    
+    //获取isa指向的对象
+    NSLog(@"%p  %p  %p",object_getClass(person),[KLOtherPerson class],object_getClass([KLOtherPerson class])) ;
+    
+    
+    //设置isa的指向
+    object_setClass(person, [KLTestRuntimer class]) ;
+    
+    
+    
+    //判断是否是class对象
+    object_isClass(person) ;
+    
+    
+    
+    //创建新的类
+   Class newClass = objc_allocateClassPair([NSObject class], "KLStudent", 0) ;
+    
+    //添加成员变量,必须在registerClassPair之前
+    class_addIvar(newClass, "_age", 4, 1, @encode(int)) ;
+    class_addIvar(newClass, "_weight", 4, 1, @encode(int)) ;
+    
+    //添加方法,可以再注册之后
+    class_addMethod(newClass, @selector(run), (IMP)run , "v@:") ;
+
+  //注册类
+    objc_registerClassPair(newClass) ;
+    
+    id dog = [[newClass alloc]init];
+    [dog setValue:@10 forKey:@"_age"];
+    
+    NSLog(@"dog == %@",[dog valueForKey:@"_age"]) ;
+    [dog run];
+    
+    //销毁创建的类
+//    objc_disposeClassPair(newClass) ;
+    
+   
+    //获取成员变量
+    Ivar  nameIva = class_getInstanceVariable([KLOtherPerson class], "_rName") ;
+    NSLog(@"%s %s", ivar_getName(nameIva),ivar_getTypeEncoding(nameIva)) ;
+    
+    
+   unsigned int rCount ;
+    Ivar *ivars = class_copyIvarList([KLOtherPerson class], &rCount) ;
+    
+    
+    for (int i = 0; i < rCount; i++) {
+        Ivar iva = ivars[i] ;
+        NSLog(@"%s  %s",ivar_getName(iva) ,ivar_getTypeEncoding(iva)) ;
+    }
+    
+}
 //1 消息发送
 
 
@@ -188,6 +252,10 @@ void c_other(id self ,SEL _cmd){
 
 
 @implementation KLOtherPerson
+
+
+ 
+
 
 -(void)pvt_test;{
     NSLog(@"%s",__func__) ;

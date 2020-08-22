@@ -107,7 +107,7 @@
 
         [strongSelf rSelector ];
         
-        NSLog(@"退出startTimerBlock");
+        NSLog(@"startTimerBlock");
 
     }];
     
@@ -122,7 +122,7 @@
         
         [strongSelf rSelector ];
         
-        NSLog(@"退出startTimerBlock");
+        NSLog(@" startTimerBlock");
 
         
     }];
