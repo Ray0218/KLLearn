@@ -1,0 +1,789 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C8C2DE9C49A96FE6DAE3773D /* Pods_KLDouYu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 755E03B7440522B667F78422 /* Pods_KLDouYu.framework */; };
+		F73DF1B724FDE61F008CB6AE /* KLRecommendSycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73DF1B624FDE61F008CB6AE /* KLRecommendSycleView.swift */; };
+		F73DF1B924FDF6A1008CB6AE /* KLCycleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73DF1B824FDF6A1008CB6AE /* KLCycleModel.swift */; };
+		F73DF1BB24FE1906008CB6AE /* KLCycleCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73DF1BA24FE1906008CB6AE /* KLCycleCollectionCell.swift */; };
+		F73DF1BD24FE2F64008CB6AE /* KLRecommendGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73DF1BC24FE2F64008CB6AE /* KLRecommendGameView.swift */; };
+		F73DF1BF24FE2FB1008CB6AE /* KLGameCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73DF1BE24FE2FB1008CB6AE /* KLGameCollectionCell.swift */; };
+		F73DF1C124FF386D008CB6AE /* KLGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73DF1C024FF386D008CB6AE /* KLGameViewController.swift */; };
+		F73DF1C324FF48CA008CB6AE /* KLRecomGameCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73DF1C224FF48CA008CB6AE /* KLRecomGameCollectionCell.swift */; };
+		F73DF1C524FF49F8008CB6AE /* KLGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73DF1C424FF49F8008CB6AE /* KLGameViewModel.swift */; };
+		F73DF1C724FF7CC1008CB6AE /* KLAmuseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73DF1C624FF7CC1008CB6AE /* KLAmuseViewController.swift */; };
+		F73DF1C924FF7DAF008CB6AE /* KLAmuseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73DF1C824FF7DAF008CB6AE /* KLAmuseViewModel.swift */; };
+		F73DF1CC24FF8128008CB6AE /* KLBaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73DF1CB24FF8128008CB6AE /* KLBaseViewModel.swift */; };
+		F73DF1CE24FF8464008CB6AE /* KLAnchorBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73DF1CD24FF8464008CB6AE /* KLAnchorBaseController.swift */; };
+		F73DF1D024FF93AF008CB6AE /* KLAmuseMenueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73DF1CF24FF93AF008CB6AE /* KLAmuseMenueView.swift */; };
+		F73DF1D224FF9922008CB6AE /* KLMenueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73DF1D124FF9922008CB6AE /* KLMenueCell.swift */; };
+		F73DF1D424FFC0EA008CB6AE /* KLFunnyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73DF1D324FFC0EA008CB6AE /* KLFunnyViewController.swift */; };
+		F73DF1D724FFC925008CB6AE /* KLHomeBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73DF1D624FFC925008CB6AE /* KLHomeBaseController.swift */; };
+		F73DF1DA2500973B008CB6AE /* KLShowRoomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73DF1D92500973B008CB6AE /* KLShowRoomController.swift */; };
+		F73DF1DC25009997008CB6AE /* KLNormalRoomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73DF1DB25009997008CB6AE /* KLNormalRoomController.swift */; };
+		F73DF1E025009D9C008CB6AE /* UINavigationController-Extern.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73DF1DF25009D9C008CB6AE /* UINavigationController-Extern.swift */; };
+		F73DF1E22500D2AE008CB6AE /* KLBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73DF1E12500D2AE008CB6AE /* KLBaseViewController.swift */; };
+		F73DF1E42500D642008CB6AE /* KLCustomerNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73DF1E32500D642008CB6AE /* KLCustomerNavigationController.swift */; };
+		F73DF1ED25026512008CB6AE /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F73DF1EC25026512008CB6AE /* IJKMediaFramework.framework */; };
+		F73DF1EF25026C9B008CB6AE /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F73DF1EE25026C9B008CB6AE /* libz.tbd */; };
+		F73DF1F125026CB6008CB6AE /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F73DF1F025026CB6008CB6AE /* libbz2.tbd */; };
+		F73DF1F325026CCD008CB6AE /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F73DF1F225026CCD008CB6AE /* VideoToolbox.framework */; };
+		F73DF1F525026CD9008CB6AE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F73DF1F425026CD9008CB6AE /* AudioToolbox.framework */; };
+		F73DF1F725026CE1008CB6AE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F73DF1F625026CE1008CB6AE /* AVFoundation.framework */; };
+		F73DF1F925026CEF008CB6AE /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F73DF1F825026CEF008CB6AE /* CoreMedia.framework */; };
+		F73DF1FB25026CFC008CB6AE /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F73DF1FA25026CFC008CB6AE /* MediaPlayer.framework */; };
+		F73DF1FD25026D13008CB6AE /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F73DF1FC25026D13008CB6AE /* MobileCoreServices.framework */; };
+		F73DF1FF25026D1B008CB6AE /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F73DF1FE25026D1B008CB6AE /* OpenGLES.framework */; };
+		F73DF20125026D36008CB6AE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F73DF20025026D36008CB6AE /* QuartzCore.framework */; };
+		F73DF20325026D59008CB6AE /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F73DF20225026D59008CB6AE /* CoreVideo.framework */; };
+		F73DF20525026D73008CB6AE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F73DF20425026D73008CB6AE /* CoreGraphics.framework */; };
+		F73DF20725026E0C008CB6AE /* libstdc++.6.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F73DF20625026E0C008CB6AE /* libstdc++.6.tbd */; };
+		F73DF20A25026FDA008CB6AE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F73DF20925026FDA008CB6AE /* UIKit.framework */; };
+		F73DF20C250270C2008CB6AE /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F73DF20B250270C2008CB6AE /* libstdc++.6.0.9.tbd */; };
+		F78A972425033C5700CE93DC /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F78A972325033C5700CE93DC /* libstdc++.tbd */; };
+		F7AF74DE24F90A48004B02FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AF74DD24F90A48004B02FA /* AppDelegate.swift */; };
+		F7AF74E724F90A73004B02FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7AF74E624F90A73004B02FA /* Assets.xcassets */; };
+		F7AF74EA24F90A73004B02FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7AF74E824F90A73004B02FA /* LaunchScreen.storyboard */; };
+		F7AF74F224F91231004B02FA /* KLTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AF74F124F91231004B02FA /* KLTabBarController.swift */; };
+		F7AF74F524F92616004B02FA /* KLHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AF74F424F92616004B02FA /* KLHomeController.swift */; };
+		F7AF74FA24F92CD1004B02FA /* KLLiveController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AF74F924F92CD1004B02FA /* KLLiveController.swift */; };
+		F7AF74FC24F92CEB004B02FA /* KLAttentionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AF74FB24F92CEB004B02FA /* KLAttentionController.swift */; };
+		F7AF74FE24F92D02004B02FA /* KLMyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AF74FD24F92D02004B02FA /* KLMyController.swift */; };
+		F7AF750124F9E7B0004B02FA /* launchImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7AF750024F9E7B0004B02FA /* launchImage@2x.png */; };
+		F7AF750724F9EB94004B02FA /* UIBarButtonItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AF750624F9EB94004B02FA /* UIBarButtonItem-Extension.swift */; };
+		F7AF750A24F9F09E004B02FA /* KLPageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AF750924F9F09E004B02FA /* KLPageTitleView.swift */; };
+		F7AF750C24F9F5BB004B02FA /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AF750B24F9F5BB004B02FA /* Common.swift */; };
+		F7AF750E24FA0207004B02FA /* KLPageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AF750D24FA0207004B02FA /* KLPageContentView.swift */; };
+		F7AF751024FA048A004B02FA /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AF750F24FA048A004B02FA /* UIColor-Extension.swift */; };
+		F7AF751224FA414B004B02FA /* KLRecommendController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AF751124FA414B004B02FA /* KLRecommendController.swift */; };
+		F7AF751624FA52EC004B02FA /* KLRecommendHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AF751524FA52EC004B02FA /* KLRecommendHeaderView.swift */; };
+		F7AF751924FC96C0004B02FA /* KLCommonHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AF751824FC96C0004B02FA /* KLCommonHeader.swift */; };
+		F7AF751D24FCA613004B02FA /* KLNormalCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AF751C24FCA613004B02FA /* KLNormalCollectionCell.swift */; };
+		F7AF751F24FCABE3004B02FA /* KLPrettyCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AF751E24FCABE3004B02FA /* KLPrettyCollectionCell.swift */; };
+		F7AF752224FCDA9E004B02FA /* KLNetWorkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AF752124FCDA9E004B02FA /* KLNetWorkTools.swift */; };
+		F7AF752824FCF581004B02FA /* KLRecommendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AF752724FCF581004B02FA /* KLRecommendViewModel.swift */; };
+		F7AF752A24FCF76F004B02FA /* NSDate-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AF752924FCF76F004B02FA /* NSDate-Extension.swift */; };
+		F7AF752D24FD0CCD004B02FA /* KLAnchorGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AF752C24FD0CCD004B02FA /* KLAnchorGroup.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		755E03B7440522B667F78422 /* Pods_KLDouYu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KLDouYu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5AD25F103364370540363E2 /* Pods-KLDouYu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KLDouYu.debug.xcconfig"; path = "Target Support Files/Pods-KLDouYu/Pods-KLDouYu.debug.xcconfig"; sourceTree = "<group>"; };
+		F61BB68A1877ACFE54347D03 /* Pods-KLDouYu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KLDouYu.release.xcconfig"; path = "Target Support Files/Pods-KLDouYu/Pods-KLDouYu.release.xcconfig"; sourceTree = "<group>"; };
+		F73DF1B624FDE61F008CB6AE /* KLRecommendSycleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLRecommendSycleView.swift; sourceTree = "<group>"; };
+		F73DF1B824FDF6A1008CB6AE /* KLCycleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLCycleModel.swift; sourceTree = "<group>"; };
+		F73DF1BA24FE1906008CB6AE /* KLCycleCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLCycleCollectionCell.swift; sourceTree = "<group>"; };
+		F73DF1BC24FE2F64008CB6AE /* KLRecommendGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLRecommendGameView.swift; sourceTree = "<group>"; };
+		F73DF1BE24FE2FB1008CB6AE /* KLGameCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLGameCollectionCell.swift; sourceTree = "<group>"; };
+		F73DF1C024FF386D008CB6AE /* KLGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLGameViewController.swift; sourceTree = "<group>"; };
+		F73DF1C224FF48CA008CB6AE /* KLRecomGameCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLRecomGameCollectionCell.swift; sourceTree = "<group>"; };
+		F73DF1C424FF49F8008CB6AE /* KLGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLGameViewModel.swift; sourceTree = "<group>"; };
+		F73DF1C624FF7CC1008CB6AE /* KLAmuseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLAmuseViewController.swift; sourceTree = "<group>"; };
+		F73DF1C824FF7DAF008CB6AE /* KLAmuseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLAmuseViewModel.swift; sourceTree = "<group>"; };
+		F73DF1CB24FF8128008CB6AE /* KLBaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLBaseViewModel.swift; sourceTree = "<group>"; };
+		F73DF1CD24FF8464008CB6AE /* KLAnchorBaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLAnchorBaseController.swift; sourceTree = "<group>"; };
+		F73DF1CF24FF93AF008CB6AE /* KLAmuseMenueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLAmuseMenueView.swift; sourceTree = "<group>"; };
+		F73DF1D124FF9922008CB6AE /* KLMenueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLMenueCell.swift; sourceTree = "<group>"; };
+		F73DF1D324FFC0EA008CB6AE /* KLFunnyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLFunnyViewController.swift; sourceTree = "<group>"; };
+		F73DF1D624FFC925008CB6AE /* KLHomeBaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLHomeBaseController.swift; sourceTree = "<group>"; };
+		F73DF1D92500973B008CB6AE /* KLShowRoomController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLShowRoomController.swift; sourceTree = "<group>"; };
+		F73DF1DB25009997008CB6AE /* KLNormalRoomController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLNormalRoomController.swift; sourceTree = "<group>"; };
+		F73DF1DF25009D9C008CB6AE /* UINavigationController-Extern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController-Extern.swift"; sourceTree = "<group>"; };
+		F73DF1E12500D2AE008CB6AE /* KLBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLBaseViewController.swift; sourceTree = "<group>"; };
+		F73DF1E32500D642008CB6AE /* KLCustomerNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLCustomerNavigationController.swift; sourceTree = "<group>"; };
+		F73DF1EC25026512008CB6AE /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
+		F73DF1EE25026C9B008CB6AE /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		F73DF1F025026CB6008CB6AE /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		F73DF1F225026CCD008CB6AE /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		F73DF1F425026CD9008CB6AE /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		F73DF1F625026CE1008CB6AE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F73DF1F825026CEF008CB6AE /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		F73DF1FA25026CFC008CB6AE /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		F73DF1FC25026D13008CB6AE /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		F73DF1FE25026D1B008CB6AE /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		F73DF20025026D36008CB6AE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F73DF20225026D59008CB6AE /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		F73DF20425026D73008CB6AE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F73DF20625026E0C008CB6AE /* libstdc++.6.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.tbd"; path = "usr/lib/libstdc++.6.tbd"; sourceTree = SDKROOT; };
+		F73DF20925026FDA008CB6AE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F73DF20B250270C2008CB6AE /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		F78A972325033C5700CE93DC /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		F7AF74DA24F90A48004B02FA /* KLDouYu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KLDouYu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7AF74DD24F90A48004B02FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F7AF74E624F90A73004B02FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F7AF74E924F90A73004B02FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F7AF74EB24F90A73004B02FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7AF74F124F91231004B02FA /* KLTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLTabBarController.swift; sourceTree = "<group>"; };
+		F7AF74F424F92616004B02FA /* KLHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLHomeController.swift; sourceTree = "<group>"; };
+		F7AF74F924F92CD1004B02FA /* KLLiveController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLLiveController.swift; sourceTree = "<group>"; };
+		F7AF74FB24F92CEB004B02FA /* KLAttentionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLAttentionController.swift; sourceTree = "<group>"; };
+		F7AF74FD24F92D02004B02FA /* KLMyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLMyController.swift; sourceTree = "<group>"; };
+		F7AF750024F9E7B0004B02FA /* launchImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launchImage@2x.png"; sourceTree = "<group>"; };
+		F7AF750624F9EB94004B02FA /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
+		F7AF750924F9F09E004B02FA /* KLPageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLPageTitleView.swift; sourceTree = "<group>"; };
+		F7AF750B24F9F5BB004B02FA /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		F7AF750D24FA0207004B02FA /* KLPageContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLPageContentView.swift; sourceTree = "<group>"; };
+		F7AF750F24FA048A004B02FA /* UIColor-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
+		F7AF751124FA414B004B02FA /* KLRecommendController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLRecommendController.swift; sourceTree = "<group>"; };
+		F7AF751524FA52EC004B02FA /* KLRecommendHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLRecommendHeaderView.swift; sourceTree = "<group>"; };
+		F7AF751824FC96C0004B02FA /* KLCommonHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLCommonHeader.swift; sourceTree = "<group>"; };
+		F7AF751C24FCA613004B02FA /* KLNormalCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLNormalCollectionCell.swift; sourceTree = "<group>"; };
+		F7AF751E24FCABE3004B02FA /* KLPrettyCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLPrettyCollectionCell.swift; sourceTree = "<group>"; };
+		F7AF752124FCDA9E004B02FA /* KLNetWorkTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLNetWorkTools.swift; sourceTree = "<group>"; };
+		F7AF752724FCF581004B02FA /* KLRecommendViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLRecommendViewModel.swift; sourceTree = "<group>"; };
+		F7AF752924FCF76F004B02FA /* NSDate-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDate-Extension.swift"; sourceTree = "<group>"; };
+		F7AF752C24FD0CCD004B02FA /* KLAnchorGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLAnchorGroup.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F7AF74D724F90A48004B02FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F78A972425033C5700CE93DC /* libstdc++.tbd in Frameworks */,
+				F73DF20C250270C2008CB6AE /* libstdc++.6.0.9.tbd in Frameworks */,
+				F73DF20A25026FDA008CB6AE /* UIKit.framework in Frameworks */,
+				F73DF20725026E0C008CB6AE /* libstdc++.6.tbd in Frameworks */,
+				F73DF20525026D73008CB6AE /* CoreGraphics.framework in Frameworks */,
+				F73DF20325026D59008CB6AE /* CoreVideo.framework in Frameworks */,
+				F73DF20125026D36008CB6AE /* QuartzCore.framework in Frameworks */,
+				F73DF1FF25026D1B008CB6AE /* OpenGLES.framework in Frameworks */,
+				F73DF1FD25026D13008CB6AE /* MobileCoreServices.framework in Frameworks */,
+				F73DF1F925026CEF008CB6AE /* CoreMedia.framework in Frameworks */,
+				F73DF1FB25026CFC008CB6AE /* MediaPlayer.framework in Frameworks */,
+				F73DF1F725026CE1008CB6AE /* AVFoundation.framework in Frameworks */,
+				F73DF1F525026CD9008CB6AE /* AudioToolbox.framework in Frameworks */,
+				F73DF1F325026CCD008CB6AE /* VideoToolbox.framework in Frameworks */,
+				F73DF1F125026CB6008CB6AE /* libbz2.tbd in Frameworks */,
+				F73DF1EF25026C9B008CB6AE /* libz.tbd in Frameworks */,
+				C8C2DE9C49A96FE6DAE3773D /* Pods_KLDouYu.framework in Frameworks */,
+				F73DF1ED25026512008CB6AE /* IJKMediaFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30A08E1AAF0F1BF90A9032F7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A5AD25F103364370540363E2 /* Pods-KLDouYu.debug.xcconfig */,
+				F61BB68A1877ACFE54347D03 /* Pods-KLDouYu.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		58E7BE703890D798CF61CF46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F78A972325033C5700CE93DC /* libstdc++.tbd */,
+				F73DF20B250270C2008CB6AE /* libstdc++.6.0.9.tbd */,
+				F73DF20925026FDA008CB6AE /* UIKit.framework */,
+				F73DF20625026E0C008CB6AE /* libstdc++.6.tbd */,
+				F73DF20425026D73008CB6AE /* CoreGraphics.framework */,
+				F73DF20225026D59008CB6AE /* CoreVideo.framework */,
+				F73DF20025026D36008CB6AE /* QuartzCore.framework */,
+				F73DF1FE25026D1B008CB6AE /* OpenGLES.framework */,
+				F73DF1FC25026D13008CB6AE /* MobileCoreServices.framework */,
+				F73DF1FA25026CFC008CB6AE /* MediaPlayer.framework */,
+				F73DF1F825026CEF008CB6AE /* CoreMedia.framework */,
+				F73DF1F625026CE1008CB6AE /* AVFoundation.framework */,
+				F73DF1F425026CD9008CB6AE /* AudioToolbox.framework */,
+				F73DF1F225026CCD008CB6AE /* VideoToolbox.framework */,
+				F73DF1F025026CB6008CB6AE /* libbz2.tbd */,
+				F73DF1EE25026C9B008CB6AE /* libz.tbd */,
+				F73DF1EC25026512008CB6AE /* IJKMediaFramework.framework */,
+				755E03B7440522B667F78422 /* Pods_KLDouYu.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F73DF1CA24FF8108008CB6AE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F73DF1CB24FF8128008CB6AE /* KLBaseViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F73DF1D524FFC8F3008CB6AE /* ViewContoller */ = {
+			isa = PBXGroup;
+			children = (
+				F73DF1D624FFC925008CB6AE /* KLHomeBaseController.swift */,
+				F73DF1E12500D2AE008CB6AE /* KLBaseViewController.swift */,
+				F73DF1E32500D642008CB6AE /* KLCustomerNavigationController.swift */,
+			);
+			path = ViewContoller;
+			sourceTree = "<group>";
+		};
+		F73DF1D8250096E7008CB6AE /* Room */ = {
+			isa = PBXGroup;
+			children = (
+				F73DF1D92500973B008CB6AE /* KLShowRoomController.swift */,
+				F73DF1DB25009997008CB6AE /* KLNormalRoomController.swift */,
+			);
+			path = Room;
+			sourceTree = "<group>";
+		};
+		F7AF74D124F90A48004B02FA = {
+			isa = PBXGroup;
+			children = (
+				F7AF74DC24F90A48004B02FA /* KLDouYu */,
+				F7AF74DB24F90A48004B02FA /* Products */,
+				30A08E1AAF0F1BF90A9032F7 /* Pods */,
+				58E7BE703890D798CF61CF46 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F7AF74DB24F90A48004B02FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F7AF74DA24F90A48004B02FA /* KLDouYu.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F7AF74DC24F90A48004B02FA /* KLDouYu */ = {
+			isa = PBXGroup;
+			children = (
+				F7AF752024FCDA45004B02FA /* Net */,
+				F7AF750824F9F06D004B02FA /* Main */,
+				F7AF750224F9EAC1004B02FA /* Tools */,
+				F7AF74FF24F9E7B0004B02FA /* Source */,
+				F7AF74F824F92CB8004B02FA /* My */,
+				F7AF74F724F92CAF004B02FA /* Attention */,
+				F7AF74F624F92C97004B02FA /* Live */,
+				F7AF74F324F925EC004B02FA /* Home */,
+				F7AF74DD24F90A48004B02FA /* AppDelegate.swift */,
+				F7AF74F124F91231004B02FA /* KLTabBarController.swift */,
+				F7AF74E624F90A73004B02FA /* Assets.xcassets */,
+				F7AF74E824F90A73004B02FA /* LaunchScreen.storyboard */,
+				F7AF74EB24F90A73004B02FA /* Info.plist */,
+			);
+			path = KLDouYu;
+			sourceTree = "<group>";
+		};
+		F7AF74F324F925EC004B02FA /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F73DF1D8250096E7008CB6AE /* Room */,
+				F7AF752424FCF3A2004B02FA /* Model */,
+				F7AF752324FCEF31004B02FA /* ViewModel */,
+				F7AF751424FA528E004B02FA /* Controller */,
+				F7AF751324FA5288004B02FA /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F7AF74F624F92C97004B02FA /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				F7AF74F924F92CD1004B02FA /* KLLiveController.swift */,
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		F7AF74F724F92CAF004B02FA /* Attention */ = {
+			isa = PBXGroup;
+			children = (
+				F7AF74FB24F92CEB004B02FA /* KLAttentionController.swift */,
+			);
+			path = Attention;
+			sourceTree = "<group>";
+		};
+		F7AF74F824F92CB8004B02FA /* My */ = {
+			isa = PBXGroup;
+			children = (
+				F7AF74FD24F92D02004B02FA /* KLMyController.swift */,
+			);
+			path = My;
+			sourceTree = "<group>";
+		};
+		F7AF74FF24F9E7B0004B02FA /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				F7AF750024F9E7B0004B02FA /* launchImage@2x.png */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		F7AF750224F9EAC1004B02FA /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				F7AF750324F9EB05004B02FA /* extension */,
+				F7AF750B24F9F5BB004B02FA /* Common.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		F7AF750324F9EB05004B02FA /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				F7AF750624F9EB94004B02FA /* UIBarButtonItem-Extension.swift */,
+				F7AF750F24FA048A004B02FA /* UIColor-Extension.swift */,
+				F7AF752924FCF76F004B02FA /* NSDate-Extension.swift */,
+				F73DF1DF25009D9C008CB6AE /* UINavigationController-Extern.swift */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+		F7AF750824F9F06D004B02FA /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F73DF1D524FFC8F3008CB6AE /* ViewContoller */,
+				F73DF1CA24FF8108008CB6AE /* ViewModel */,
+				F7AF752B24FD0C9A004B02FA /* Model */,
+				F7AF750924F9F09E004B02FA /* KLPageTitleView.swift */,
+				F7AF750D24FA0207004B02FA /* KLPageContentView.swift */,
+				F7AF751824FC96C0004B02FA /* KLCommonHeader.swift */,
+				F7AF751C24FCA613004B02FA /* KLNormalCollectionCell.swift */,
+				F7AF751E24FCABE3004B02FA /* KLPrettyCollectionCell.swift */,
+				F73DF1CD24FF8464008CB6AE /* KLAnchorBaseController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		F7AF751324FA5288004B02FA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F7AF751524FA52EC004B02FA /* KLRecommendHeaderView.swift */,
+				F73DF1B624FDE61F008CB6AE /* KLRecommendSycleView.swift */,
+				F73DF1BA24FE1906008CB6AE /* KLCycleCollectionCell.swift */,
+				F73DF1BC24FE2F64008CB6AE /* KLRecommendGameView.swift */,
+				F73DF1BE24FE2FB1008CB6AE /* KLGameCollectionCell.swift */,
+				F73DF1C224FF48CA008CB6AE /* KLRecomGameCollectionCell.swift */,
+				F73DF1CF24FF93AF008CB6AE /* KLAmuseMenueView.swift */,
+				F73DF1D124FF9922008CB6AE /* KLMenueCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F7AF751424FA528E004B02FA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F7AF74F424F92616004B02FA /* KLHomeController.swift */,
+				F7AF751124FA414B004B02FA /* KLRecommendController.swift */,
+				F73DF1C024FF386D008CB6AE /* KLGameViewController.swift */,
+				F73DF1C624FF7CC1008CB6AE /* KLAmuseViewController.swift */,
+				F73DF1D324FFC0EA008CB6AE /* KLFunnyViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F7AF752024FCDA45004B02FA /* Net */ = {
+			isa = PBXGroup;
+			children = (
+				F7AF752124FCDA9E004B02FA /* KLNetWorkTools.swift */,
+			);
+			name = Net;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		F7AF752324FCEF31004B02FA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F7AF752724FCF581004B02FA /* KLRecommendViewModel.swift */,
+				F73DF1C424FF49F8008CB6AE /* KLGameViewModel.swift */,
+				F73DF1C824FF7DAF008CB6AE /* KLAmuseViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F7AF752424FCF3A2004B02FA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F73DF1B824FDF6A1008CB6AE /* KLCycleModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F7AF752B24FD0C9A004B02FA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F7AF752C24FD0CCD004B02FA /* KLAnchorGroup.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F7AF74D924F90A48004B02FA /* KLDouYu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7AF74EE24F90A73004B02FA /* Build configuration list for PBXNativeTarget "KLDouYu" */;
+			buildPhases = (
+				F6ADE8AF8B62FF3B388697DF /* [CP] Check Pods Manifest.lock */,
+				F7AF74D624F90A48004B02FA /* Sources */,
+				F7AF74D724F90A48004B02FA /* Frameworks */,
+				F7AF74D824F90A48004B02FA /* Resources */,
+				405084A23F8075EF371863B1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KLDouYu;
+			productName = KLDouYu;
+			productReference = F7AF74DA24F90A48004B02FA /* KLDouYu.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F7AF74D224F90A48004B02FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = KL;
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = ray;
+				TargetAttributes = {
+					F7AF74D924F90A48004B02FA = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = F7AF74D524F90A48004B02FA /* Build configuration list for PBXProject "KLDouYu" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F7AF74D124F90A48004B02FA;
+			productRefGroup = F7AF74DB24F90A48004B02FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F7AF74D924F90A48004B02FA /* KLDouYu */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F7AF74D824F90A48004B02FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7AF74EA24F90A73004B02FA /* LaunchScreen.storyboard in Resources */,
+				F7AF750124F9E7B0004B02FA /* launchImage@2x.png in Resources */,
+				F7AF74E724F90A73004B02FA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		405084A23F8075EF371863B1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KLDouYu/Pods-KLDouYu-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KLDouYu/Pods-KLDouYu-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KLDouYu/Pods-KLDouYu-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6ADE8AF8B62FF3B388697DF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KLDouYu-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F7AF74D624F90A48004B02FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F73DF1E025009D9C008CB6AE /* UINavigationController-Extern.swift in Sources */,
+				F73DF1DC25009997008CB6AE /* KLNormalRoomController.swift in Sources */,
+				F73DF1C324FF48CA008CB6AE /* KLRecomGameCollectionCell.swift in Sources */,
+				F7AF752224FCDA9E004B02FA /* KLNetWorkTools.swift in Sources */,
+				F7AF750E24FA0207004B02FA /* KLPageContentView.swift in Sources */,
+				F7AF74FC24F92CEB004B02FA /* KLAttentionController.swift in Sources */,
+				F7AF751F24FCABE3004B02FA /* KLPrettyCollectionCell.swift in Sources */,
+				F73DF1DA2500973B008CB6AE /* KLShowRoomController.swift in Sources */,
+				F7AF750A24F9F09E004B02FA /* KLPageTitleView.swift in Sources */,
+				F73DF1B724FDE61F008CB6AE /* KLRecommendSycleView.swift in Sources */,
+				F7AF752824FCF581004B02FA /* KLRecommendViewModel.swift in Sources */,
+				F73DF1CE24FF8464008CB6AE /* KLAnchorBaseController.swift in Sources */,
+				F7AF751D24FCA613004B02FA /* KLNormalCollectionCell.swift in Sources */,
+				F7AF751224FA414B004B02FA /* KLRecommendController.swift in Sources */,
+				F73DF1B924FDF6A1008CB6AE /* KLCycleModel.swift in Sources */,
+				F73DF1BD24FE2F64008CB6AE /* KLRecommendGameView.swift in Sources */,
+				F7AF751624FA52EC004B02FA /* KLRecommendHeaderView.swift in Sources */,
+				F73DF1C924FF7DAF008CB6AE /* KLAmuseViewModel.swift in Sources */,
+				F7AF74FA24F92CD1004B02FA /* KLLiveController.swift in Sources */,
+				F73DF1D724FFC925008CB6AE /* KLHomeBaseController.swift in Sources */,
+				F73DF1E42500D642008CB6AE /* KLCustomerNavigationController.swift in Sources */,
+				F73DF1C124FF386D008CB6AE /* KLGameViewController.swift in Sources */,
+				F73DF1CC24FF8128008CB6AE /* KLBaseViewModel.swift in Sources */,
+				F73DF1E22500D2AE008CB6AE /* KLBaseViewController.swift in Sources */,
+				F7AF752A24FCF76F004B02FA /* NSDate-Extension.swift in Sources */,
+				F7AF752D24FD0CCD004B02FA /* KLAnchorGroup.swift in Sources */,
+				F73DF1D024FF93AF008CB6AE /* KLAmuseMenueView.swift in Sources */,
+				F73DF1BB24FE1906008CB6AE /* KLCycleCollectionCell.swift in Sources */,
+				F7AF74FE24F92D02004B02FA /* KLMyController.swift in Sources */,
+				F7AF750C24F9F5BB004B02FA /* Common.swift in Sources */,
+				F73DF1D424FFC0EA008CB6AE /* KLFunnyViewController.swift in Sources */,
+				F7AF74F524F92616004B02FA /* KLHomeController.swift in Sources */,
+				F73DF1D224FF9922008CB6AE /* KLMenueCell.swift in Sources */,
+				F73DF1C724FF7CC1008CB6AE /* KLAmuseViewController.swift in Sources */,
+				F73DF1C524FF49F8008CB6AE /* KLGameViewModel.swift in Sources */,
+				F73DF1BF24FE2FB1008CB6AE /* KLGameCollectionCell.swift in Sources */,
+				F7AF74F224F91231004B02FA /* KLTabBarController.swift in Sources */,
+				F7AF74DE24F90A48004B02FA /* AppDelegate.swift in Sources */,
+				F7AF750724F9EB94004B02FA /* UIBarButtonItem-Extension.swift in Sources */,
+				F7AF751924FC96C0004B02FA /* KLCommonHeader.swift in Sources */,
+				F7AF751024FA048A004B02FA /* UIColor-Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F7AF74E824F90A73004B02FA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7AF74E924F90A73004B02FA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F7AF74EC24F90A73004B02FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F7AF74ED24F90A73004B02FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F7AF74EF24F90A73004B02FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5AD25F103364370540363E2 /* Pods-KLDouYu.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 78AKS5G7F3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = KLDouYu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ray-ios.KLDouYu";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F7AF74F024F90A73004B02FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F61BB68A1877ACFE54347D03 /* Pods-KLDouYu.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 78AKS5G7F3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = KLDouYu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ray-ios.KLDouYu";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F7AF74D524F90A48004B02FA /* Build configuration list for PBXProject "KLDouYu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7AF74EC24F90A73004B02FA /* Debug */,
+				F7AF74ED24F90A73004B02FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7AF74EE24F90A73004B02FA /* Build configuration list for PBXNativeTarget "KLDouYu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7AF74EF24F90A73004B02FA /* Debug */,
+				F7AF74F024F90A73004B02FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F7AF74D224F90A48004B02FA /* Project object */;
+}

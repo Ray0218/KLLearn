@@ -14,4 +14,22 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+
+
+
+@interface KLTargetObject : NSObject
+
+@property (nonatomic, weak, nullable) id  target;
++(instancetype)initWithTarget:(id)target;
+
+@end
+
+
+
+@interface KLProxy : NSProxy //专门做消息转发
+@property (nonatomic, weak, nullable) id  target;
++(instancetype)proxyWithTarget:(id)target;
+
+@end
+
 NS_ASSUME_NONNULL_END

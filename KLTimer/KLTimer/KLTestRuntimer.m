@@ -46,7 +46,7 @@ void run(id self, SEL _cmd){
     
     
     //创建新的类
-   Class newClass = objc_allocateClassPair([NSObject class], "KLStudent", 0) ;
+    Class newClass = objc_allocateClassPair([NSObject class], "KLStudent", 0) ;
     
     //添加成员变量,必须在registerClassPair之前
     class_addIvar(newClass, "_age", 4, 1, @encode(int)) ;
@@ -54,8 +54,8 @@ void run(id self, SEL _cmd){
     
     //添加方法,可以再注册之后
     class_addMethod(newClass, @selector(run), (IMP)run , "v@:") ;
-
-  //注册类
+    
+    //注册类
     objc_registerClassPair(newClass) ;
     
     id dog = [[newClass alloc]init];
@@ -65,15 +65,15 @@ void run(id self, SEL _cmd){
     [dog run];
     
     //销毁创建的类
-//    objc_disposeClassPair(newClass) ;
+    //    objc_disposeClassPair(newClass) ;
     
-   
+    
     //获取成员变量
     Ivar  nameIva = class_getInstanceVariable([KLOtherPerson class], "_rName") ;
     NSLog(@"%s %s", ivar_getName(nameIva),ivar_getTypeEncoding(nameIva)) ;
     
     
-   unsigned int rCount ;
+    unsigned int rCount ;
     Ivar *ivars = class_copyIvarList([KLOtherPerson class], &rCount) ;
     
     
@@ -156,7 +156,7 @@ void c_other(id self ,SEL _cmd){
     if (sel == @selector(pvt_classtest)) {
         
         //动态添加方法 获取元类对象meta_class
-//        class_addMethod(object_getClass(self), sel,  (IMP)c_other,  "v@:") ;
+        //        class_addMethod(object_getClass(self), sel,  (IMP)c_other,  "v@:") ;
         //返回YES代表有动态添加方法
         return  YES ;
     }
@@ -180,7 +180,6 @@ void c_other(id self ,SEL _cmd){
     
     return [super forwardingTargetForSelector:aSelector] ;
 }
-
 
 
 //如果 forwardingTargetForSelector 返回的对象为空会调用这个方法获取方法签名
@@ -209,8 +208,8 @@ void c_other(id self ,SEL _cmd){
 + (id)forwardingTargetForSelector:(SEL)aSelector{
     
     if(aSelector == @selector(pvt_classtest)){
-//        return [KLOtherPerson class] ;
-
+        //        return [KLOtherPerson class] ;
+        
         return  nil ;
     }
     
@@ -254,7 +253,7 @@ void c_other(id self ,SEL _cmd){
 @implementation KLOtherPerson
 
 
- 
+
 
 
 -(void)pvt_test;{

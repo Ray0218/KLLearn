@@ -1,0 +1,63 @@
+PODS:
+  - Alamofire (4.9.1)
+  - BMPlayer (1.0.2):
+    - BMPlayer/Full (= 1.0.2)
+  - BMPlayer/Core (1.0.2)
+  - BMPlayer/Full (1.0.2):
+    - BMPlayer/Core
+    - NVActivityIndicatorView (~> 4.4.0)
+    - SnapKit (~> 4.2.0)
+  - HandyJSON (5.0.2)
+  - Kingfisher (4.10.1)
+  - NVActivityIndicatorView (4.4.1):
+    - NVActivityIndicatorView/Presenter (= 4.4.1)
+  - NVActivityIndicatorView/Presenter (4.4.1)
+  - ReactiveCocoa (11.0.0):
+    - ReactiveSwift (~> 6.2)
+  - ReactiveSwift (6.3.0)
+  - SnapKit (4.2.0)
+  - SwiftyJSON (5.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - BMPlayer (from `https://github.com/ceeyang/BMPlayer.git`)
+  - HandyJSON
+  - Kingfisher
+  - ReactiveCocoa
+  - SnapKit
+  - SwiftyJSON
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - HandyJSON
+    - Kingfisher
+    - NVActivityIndicatorView
+    - ReactiveCocoa
+    - ReactiveSwift
+    - SnapKit
+    - SwiftyJSON
+
+EXTERNAL SOURCES:
+  BMPlayer:
+    :git: https://github.com/ceeyang/BMPlayer.git
+
+CHECKOUT OPTIONS:
+  BMPlayer:
+    :commit: fd73c2663e2f89327a53f7a8e77ecb0695fe4b1f
+    :git: https://github.com/ceeyang/BMPlayer.git
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  BMPlayer: 1b1939fa311d7c04fed8940208cfaf3ba898fb6a
+  HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  NVActivityIndicatorView: f0a6b0ed2973d9544da268f4eb76696f0a9577b0
+  ReactiveCocoa: 189fcea9c5af7e394dd8a4cfc1c6f77af9ff3598
+  ReactiveSwift: 7937f26ec18d555e2a99352bd0a8b2817d1f042d
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+
+PODFILE CHECKSUM: fc0096040cde27a61bab2acb9ce44c47b9b1ae72
+
+COCOAPODS: 1.9.1

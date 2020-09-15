@@ -15,6 +15,8 @@
     NSTimer *_rTimer ;
 }
 
+
+@property(nonatomic,strong)dispatch_source_t rCGDTimer;
 @end
 
 @implementation TimeViewController
@@ -27,11 +29,13 @@
     
     self.view.backgroundColor = [UIColor colorWithRed:(arc4random()%50+50)/255.0  green:(arc4random()%105/255.0 + 40)/255.0  blue:(arc4random()%105+ 150)/255.0  alpha:1];
     
-//    [self gcdTimer:1 repeats:YES];
+        [self gcdTimer:1 repeats:YES];
     
-    [self startTimeCustBlock];
+//    [self testOtherObject];
+    
+    //    [self startTimeCustBlock];
     //    [self startTimerBlock];
-     
+    
     
     //        [self startTimeFirst];
     
@@ -47,29 +51,62 @@
     
     //内存问题 前提:event_handler里面没有包含timerTwo时,当timerTwo为成员变量是,没问题,当为局部变量时,只运行一次,但是只要里面有timerTwo,就没问题
     __weak typeof(self) weakSelf = self;
-
-    dispatch_queue_t queue = dispatch_queue_create("Ray", 0);
+    
+    dispatch_queue_t queue = dispatch_queue_create("Ra1y", DISPATCH_QUEUE_SERIAL);
     
     dispatch_source_t timerTwo = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, queue);
-    dispatch_source_set_timer(timerTwo, DISPATCH_TIME_NOW, timeinterval * NSEC_PER_SEC, 0 * NSEC_PER_SEC);
+    dispatch_source_set_timer(timerTwo, DISPATCH_TIME_NOW, timeinterval * NSEC_PER_SEC, 1 * NSEC_PER_SEC);
     dispatch_source_set_event_handler(timerTwo, ^{
         
- //         if (!repeat) {
-//            dispatch_cancel(timer);
-//        }else{
-//            [weakSelf rSelector];
-//            [self rSelector];
-
-//        }
-        timerTwo;
+        //         if (!repeat) {
+        //            dispatch_cancel(timer);
+        //        }else{
+        //            [weakSelf rSelector];
+        //            [self rSelector];
         
+        //        }
+//        timerTwo;
+        
+ 
         __strong typeof(self) strongSelf = weakSelf;
-               [strongSelf rSelector ];
+        [strongSelf rSelector ];
         
-        NSLog(@"退出event_handler");
-         
+
     });
     dispatch_resume(timerTwo);
+    
+    self.rCGDTimer = timerTwo ; //强应用timerTwo,防止局部变量被释放
+    
+}
+
+void  timerFire(void* param ){
+    
+    NSLog(@"%@",[NSThread currentThread]) ;
+    
+}
+
+-(void)testOtherObject{
+    
+    // 使用中间对象的方式
+//    _rTimer = [NSTimer timerWithTimeInterval:1 target:[KLTargetObject initWithTarget:self] selector:@selector(rSelector) userInfo:nil repeats:YES] ;
+    _rTimer = [NSTimer timerWithTimeInterval:1 target:[KLProxy proxyWithTarget:self] selector:@selector(rSelector) userInfo:nil repeats:YES] ;
+
+    [[NSRunLoop currentRunLoop]addTimer:_rTimer forMode:NSRunLoopCommonModes];
+    
+}
+
+-(void)startTimerBlock{
+    
+    //使用Block方式
+    __weak typeof(self) weakSelf = self;
+    _rTimer = [NSTimer timerWithTimeInterval:1 repeats:YES block:^(NSTimer * _Nonnull timer) {
+        __strong typeof(weakSelf) strongSelf = weakSelf;
+        
+        [strongSelf rSelector ];
+        
+     }];
+    
+    [[NSRunLoop currentRunLoop]addTimer:_rTimer forMode:NSRunLoopCommonModes];
     
 }
 
@@ -104,32 +141,18 @@
         
         
         __strong typeof(self) strongSelf = weakSelf;
-
+        
         [strongSelf rSelector ];
         
         NSLog(@"startTimerBlock");
-
-    }];
-    
-    [[NSRunLoop currentRunLoop]addTimer:_rTimer forMode:NSRunLoopCommonModes];
-    
-}
-
--(void)startTimerBlock{
-    __weak typeof(self) weakSelf = self;
-    _rTimer = [NSTimer timerWithTimeInterval:1 repeats:YES block:^(NSTimer * _Nonnull timer) {
-        __strong typeof(weakSelf) strongSelf = weakSelf;
-        
-        [strongSelf rSelector ];
-        
-        NSLog(@" startTimerBlock");
-
         
     }];
     
     [[NSRunLoop currentRunLoop]addTimer:_rTimer forMode:NSRunLoopCommonModes];
     
 }
+
+
 -(void)startTimeFirst{
     
     //    dealloc 不会被调用
@@ -147,18 +170,76 @@
     
     //    fire 只是实时触发定时器,调用定时器方法,而且不影响定时器的周期
     //    [_rTimer fire];
- 
+    
 }
 
 -(void)rSelector {
     
-    NSLog(@"Tiemer...");
+    
+    NSLog(@"当前 %@",[NSThread currentThread]) ;
+
+    
+//    NSLog(@"Tiemer...");
 }
 
 
 -(void)dealloc{
     [_rTimer invalidate];
     _rTimer = nil ;
-    NSLog(@"########### 被释放了############") ;
+    NSLog(@"  %s  ",__func__) ;
 }
+@end
+
+
+
+
+
+@implementation KLTargetObject
+
++(instancetype)initWithTarget:(id)target {
+    
+    KLTargetObject *prox = [KLTargetObject new] ;
+    prox.target = target ;
+    
+    return prox ;
+}
+
+-(id)forwardingTargetForSelector:(SEL)aSelector{
+
+    return self.target ;
+}
+
+//-(NSMethodSignature *)methodSignatureForSelector:(SEL)sel{
+//
+//    return [self.target methodSignatureForSelector:sel];
+//}
+//
+//-(void)forwardInvocation:(NSInvocation *)invocation{
+//    [invocation invokeWithTarget:self.target] ;
+//}
+ 
+
+@end
+
+
+@implementation KLProxy
+
++(instancetype)proxyWithTarget:(id)target {
+    
+    KLProxy *prox = [KLProxy alloc] ;
+    prox.target = target ;
+    
+    return prox ;
+}
+-(NSMethodSignature *)methodSignatureForSelector:(SEL)sel{
+    
+    
+    return [self.target methodSignatureForSelector:sel];
+}
+
+-(void)forwardInvocation:(NSInvocation *)invocation{
+    [invocation invokeWithTarget:self.target] ;
+}
+
+ 
 @end

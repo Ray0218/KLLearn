@@ -49,6 +49,8 @@
     
     
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [btn setTitle:@"NSTimer" forState:UIControlStateNormal];
+
     btn.backgroundColor = [UIColor orangeColor] ;
     btn.frame = CGRectMake(50, 100, 150, 50) ;
     [btn addTarget:self action:@selector(pvt_click) forControlEvents:UIControlEventTouchUpInside];

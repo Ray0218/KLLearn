@@ -1,0 +1,18 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'KLDouYu' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for KLDouYu
+pod 'SnapKit'
+pod 'Alamofire'
+pod 'Kingfisher'
+#pod 'RxCocoa'
+pod 'SwiftyJSON'
+ pod 'HandyJSON'
+ pod 'ReactiveCocoa'
+ pod 'BMPlayer', :git => 'https://github.com/ceeyang/BMPlayer.git'
+
+end
